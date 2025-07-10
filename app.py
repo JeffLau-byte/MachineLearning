@@ -15,7 +15,7 @@ try:
   st.success("Data loaded successfully!")
   st.dataframe(df)
 except Exception as e:
-  st.error(" Faied to Load Data :(e)")
+  st.error(" Failed to Load Data :{e}")
 
 ">> https://github.com/settings/personal-access-tokens "
 a = st.text_input("Enter a")
