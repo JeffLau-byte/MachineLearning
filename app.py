@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import base64
-import request
+import requests
 
 st.title("Read CSV from GitHub")
 
@@ -15,4 +15,9 @@ try:
   st.success("Data loaded successfully!")
   st.dataframe(df)
 except Exception as e:
-  st.error("Data Failed to Load!")
+  st.error(" Faied to Load Data :(e)")
+
+">> https://github.com/settings/personal-access-tokens "
+a = st.text_input("Enter a")
+b = st.text_input("Enter b")
+c = st.text_input("Enter c")
