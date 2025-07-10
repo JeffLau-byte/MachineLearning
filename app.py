@@ -5,7 +5,7 @@ import requests
 
 st.title("Read CSV from GitHub")
 
-url = "https://raw.githubusercontent.com/JeffLau-byte/MachineLearning/main/grades.csv"
+url = "https://raw.githubusercontent.com/JeffLau-byte/MachineLearning/refs/heads/main/grades.csv"
 
 def load_data():
   return pd.read_csv(url)
@@ -15,7 +15,7 @@ try:
   st.success("Data loaded successfully!")
   st.dataframe(df)
 except Exception as e:
-  st.error(f" Failed to Load Data")
+  st.error(f" Failed to Load Data :{e}")
 
 ">> https://github.com/settings/personal-access-tokens "
 a = st.text_input("Enter a")
